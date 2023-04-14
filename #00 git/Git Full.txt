@@ -1,0 +1,246 @@
+green color -> staging area , red color -> working area
+---------------------------TUTORIAL~2------------------------------------
+
+git
+git --version
+git config --global user.name
+git config --global user.email
+git config --global user.name ""
+git config --global user.email ""
+
+---------------------------TUTORIAL~3------------------------------------
+
+Working Directory: The working directory is the folder in your local 
+		   computer where the project files and folders are 
+		   stored.
+
+Staging Area: The staging area has those files who are supposed to go to 
+	      the next commit. Only those files which are needed to go to 
+	      the next commit stay in the staging area (git add --a)
+
+Git Repository: Git repo is a hidden file named .git. It stores all the 
+		commits and compresses them. So when you need a specific
+		 commit it can present that to you. (git commit -m "")
+
+---------------------------TUTORIAL~4------------------------------------
+
+git commit -> open new editor
+
+git status
+git add --a
+git commit -m "-"
+git log
+git status
+git add index.html
+
+---------------------------TUTORIAL~5------------------------------------
+
+rm -rf .git -> remove tracking
+Shift + Insert -> ctrl + V
+select only -> ctrl + C
+q -> quit from git log
+git clone url 
+git clone url folderName
+
+---------------------------TUTORIAL~6------------------------------------
+
+	     untracked	     unmodified	     modified 	  staged	
+		
+---------------------------TUTORIAL~7------------------------------------
+
+touch fileName -> create file
+type nul > index.html
+copy con hello.txt
+del hello.txt
+mkdir
+rmdir /s homedir
+touch .gitignore -> create gitignore file (err.log)(*.log)(home/)(/dir/ ->
+		only the outer dir will be ignored consider /static/dir)
+git don't track the new folder
+match a partern , use negation to ignore file
+
+---------------------------TUTORIAL~8------------------------------------
+
+git diff -> compare working dir with staging area
+
+git diff --staged -> compare staging area with old commit
+
+---------------------------TUTORIAL~9------------------------------------
+
+git commit -a -m "Direct Commit" (untracked file are not added to stage 
+only modified one)
+
+--------------------------TUTORIAL~10------------------------------------
+
+git rm fileName (staging and delete )
+git mv file1 file2 (staging and rename )
+remove the error of tracking the .gitignore file by (git rm --cached file)
+
+--------------------------TUTORIAL~11------------------------------------
+
+git log -p (change with commit)
+git log -p -n (git log -p -3)
+git log --stat
+git log --pretty=oneline
+git log --pretty=short
+git log --pretty=full
+git log --since=2.days
+git log --since=2.weeks
+git log --since=2.months
+git log --since=2.years
+git log --pretty=format:
+git log --pretty=format:"%h -- %an"
+git log --pretty=format:"%h -- %ae"
+git commit --amend
+	vim editor press 'I' to insert & Esc + ':wq' to save changes
+if we want staged file to be in previous commit
+
+--------------------------TUTORIAL~12------------------------------------
+
+unstage any file from stage 
+git restore --staged file
+
+change a file to it previous commit
+git checkout -- file
+
+make folder as older commit
+git checkout -f
+git checkout first-nine-char-of-commit
+
+--------------------------TUTORIAL~13------------------------------------
+
+git remote (-)
+git remote add origin repo | + git branch -m main,git push -u origin main
+git remote -v (origin)
+github settings > ssh keys
+generating ssh keys 
+	ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+	eval "$(ssh-agent -s)"
+	ssh-add ~/.ssh/id_ed25519
+adding to github
+	tail ~/.ssh/id_ed25519.pub
+	git push -u origin master
+
+--------------------------TUTORIAL~14------------------------------------
+
+alias
+git config --global alias.st status
+git config --global alias.co commit
+git config --global alias.unstage 'restore --staged --'
+git config --global alias.last 'log -p -1'
+
+--------------------------TUTORIAL~15------------------------------------
+
+switching branch
+git checkout -b branchName
+git add . 
+git commit -m "new branch commit"
+
+return to main branch
+git checkout master
+
+git branch
+
+--------------------------TUTORIAL~16------------------------------------
+
+delete branch
+git branch -D "BranchName"
+
+--------------------------TUTORIAL~17------------------------------------
+
+<<<<<< (conflict resolution marker)
+-------------
+-------------
+====== (issue index.html)
+
+git add . (merge conflict marker)
+
+   (ptr)
+c1 <- c2 <- c3 <- c4
+	     ^c5 <- c6(object)	
+
+git branch (*master ,dev,new)
+git branch -v (master develop , commit hash ,commit message)
+git branch --merged -> already merged
+git branch --no-merged -> not merged branch
+git branch -d branchName -> give err if not merge (try using -D )
+git branch -D branchName
+
+--------------------------TUTORIAL~18------------------------------------
+
+branching workflow
+
+1. long running branches (master,dev,issue)
+2. topic branches (type JS)
+
+
+           c14
+          /  \
+        /      \
+      /           \
+    /               \
+  / 		     c11			
+c13		      |
+ | 		      c8
+c12  		      |	
+  \          c6       c7
+   \          |      / 
+    \        c5    /
+      c10     |  /  
+       |     c4/
+      c9      |	
+       |     c2
+      c3    /     
+       |  /   
+      c1/ 
+       | 
+      c0
+idea  master  issu1  issu2
+
+--------------------------TUTORIAL~18------------------------------------
+
+how to push code of master
+git init
+git st
+git add . 
+git commit -m "message"
+git remote add origin git@github.com:VISHAL-KUMAR786/git-branch.git~
+git remote
+git remote -v
+git branch -M main
+git push -u origin main
+
+if we want to push a branch
+1. always be in that branch that you want to push
+2. check git st if there is changes that are not committed then commit them
+git checkout bugfix
+git push origin bugfix
+git push origin bugfix:mybugfix (in local branch name is bugfix but in remote
+		it will be my bugfix)
+
+how to publish a branch in remote
+git checkout main
+git merge bugfix
+git branch -d bugfix 
+git push origin main
+
+how to delete branch in remote
+git push -d origin bugfix
+
+
+
+/////// restore a paticular file /////////
+git log --oneline
+git checkout ec2b9fa -- package.json
+
+
+
+
+
+
+
+
+
+
+
+
