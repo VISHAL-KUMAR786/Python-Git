@@ -1,0 +1,1 @@
+# open cmd > type python > 65*5 > exit

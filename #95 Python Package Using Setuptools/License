@@ -1,0 +1,124 @@
+#======================================================================
+#                 SUPPORT                                            
+#======================================================================
+# If you are unable to set up your license file then please contact 
+# Keysight EEsof EDA Technical Support:  
+
+#  US - 800-473-3763 or eesof-usa_support@keysight.com
+
+#  Asia - eesof-asia_support@keysight.com
+
+#  Australia:   1800-629-485
+
+#  China:       800-810-0189
+
+#  Hong Kong:   800-938-693
+
+#  India:       1800-11-2626
+
+#  Malaysia:    1800-888-848
+
+#  Singapore:   1800-375 8100
+
+#  Taiwan:      0800-047-866
+
+#  Thailand:    1800-375-8100
+
+#  Korea:       080-769-0800
+
+#  Europe:      1-800-473-EESOF (1-800-473-3673) or eesof-europe_support@keysight.com
+
+#  Japan:       81 (426) 60-8416 or eesof-japan_support@keysight.com 
+
+#    or visit: http://www.keysight.com/find/eesof-support
+
+# THIS LICENSE HAS BEEN GENERATED FOR HOSTID 0005ccccaaaa
+
+#======================================================================
+#                 LICENSE SUMMARY  
+#                                   
+
+# All "LICENSE pjc_XXX" lines are for EEsof license functionality only - Please ignore
+
+#======================================================================
+
+# This is a list of options contained in this license file 
+
+#License             Description                                                                      Expiration   Qty Version Hostid         
+#
+#W2200BP-1FP         Node-locked license ADS Core                                                     10-AUG-2014  1   3.1     0005ccccaaaa   
+#LICENSE NAME b_core
+#
+#
+#=======================================================================
+#                 LEGAL           
+#=======================================================================
+# The Use of this license file is acceptance of Keysight EDA Licensing usage terms and conditions.
+#
+#=======================================================================
+#                 QUICK START INSTRUCTIONS     
+#=======================================================================
+#
+# LICENSE Server Setup for 2011+ version software:
+# 
+# Windows Platforms:  
+#  1) Place this file on machine where file is intended:  For MAC address tied licenses, ensure this file is placed on the machine whose MAC address agrees with 
+#     the one appearing in the SERVER line of this file.  For dongle tied license, ensure this file is placed on the machine where the dongle is inserted.
+#  2) If this is a dongle tied license, insert your Agilent or Keysight supplied USB dongle
+#  3) Start your Agilent EEsof or Keysight EEsof EDA product.  The License Manager will open up.  Do the following:
+#     A) In the center of the dialog box, select "I have a license file to install" or "I want to add or replace a license file" and press "Next"
+#     B) The License Setup Wizard appears.  Press the "Add" button and enter the path to your license file.   Press "Next".  The wizard does the rest and you are ready to go!
+#
+#
+# Linux/UNIX
+#
+#  1) Place this file on the license server machine where file is intended:  For MAC address tied licenses, it is the machine whose MAC address 
+#     agrees with the one appearing in the SERVER line of this file.  For dongle tied license, it is the machine where the dongle is inserted.
+#  2) Acquire latest FLEXnet bits archive file from   http://www.keysight.com/find/eesof-flexnet-downloads and then unarchive file contents to a desired folder.
+#     A) IF License server not previously installed: From FLEXnet folder, run ./lmgrd .c <Path-To-License-File> -l <Path-To-Flex-Output-File>
+#     B) IF License server previously installed and it is running the latest licensing software: From FLEXnet folder, run ./lmutil lmreread .c <Path-To-License-File> 
+#
+#   
+#
+# LICENSE Client Setup
+#
+# Windows:  No environment variable needed.  License Manager sets this up through wizard interface. Appropriate system variables are entered into Windows Registry.  Do not explicitly define License path environment variable.
+# 
+#
+# Linux/Unix: Define {PRODUCT}_LICENSE_FILE in your license client environment where PRODUCT=ADS, EMPRO, ICCAP, or GOLDENGATE.  
+#      Set value to port@<License-Server-Name>.  For example, ADS_LICENSE_FILE = 27000@EDAToolsServer.somecompany.com
+#
+#
+#
+# LICENSE Setup for ADS Pre-2011 software with NO 2011+ Agilent EEsof or Keysight EEsof EDA software installed
+# Windows Platform:
+#==================
+#  1) If you have not already done so, download the latest Keysight EDA Licensing software Installation executable from,
+#     www.keysight.com/find/eesof-flexnet-downloads to temporary place on local disk. Then install licensing software using "Run as Administrator".
+#  2) Open a Windows command prompt as Administrator
+#  3) Change directories to installation bin folder EEsof License Tools. For example, C:\Program Files\keysight\EEsof_License_Tools\bin
+#  4) Make note of the codeword version which appears at top of this license file or can be found as in the INCREMENT lines below in the file.  It is the fourth item on the line. For example, 3.1.
+#  5) Run the following command:  aglmwizard.exe -v <codeword version>  EXAMPLE: aglmwizard.exe -v 3.1 
+#  6) A wizard interace appears.  You will be required to select a product in the drop down that appears. Select the product that corresponds to the licenses in this license file. Press "Next" 
+#  7) Select the appropriate Keysight EDA product you will be licensing in the drop down menu and then proceed in the wizard.  Press "Next" 
+#  8) You will now be presented with a few different options. Select "I have a license file to install" or "I want to add or replace a license file" and press "Next".
+#  9) You will now enter the path for your license file. Then press "Next".
+# 10) In Windows System Properties, define AGILEESOFD_LICENSE_FILE to @<machine-where-this-license-file-is-installed>
+#
+# Linux/UNIX:
+#============
+#  1) Define AGILEESOFD_LICENSE_FILE in your license client environment 
+#  2) Refer to instructions above for Linux License Server setup.
+#                                                                                   
+#
+#
+#
+#========================LICENSE KEYS START HERE=======================
+#
+SERVER this_host 0005ccccaaaa
+VENDOR agileesofd
+#
+INCREMENT b_core agileesofd 3.1 10-aug-2014 1 VENDOR_STRING="0005ccccaaaaP=#1,7,8,13,14,25,27,66,67,105,110,116,131,132,156D=#W2200BP,ADS_Core;e_core : QUAQRWX FSAQCOV DNLFVCD IFQVEZR XYAUEQE FZ" HOSTID=0005ccccaaaa ISSUER=LICENSEID=3679917 START=11-Jul-2014 SIGN="02DB 54FA 1602 6455 96F9 2CD6 61E9 685E 8F42 36AE 8603 FC38 B354 B232 FAFB 844A 6828 DD4A C924 3253 857A"
+INCREMENT pjc_b_core agileesofd 3.1 10-aug-2014 1 VENDOR_STRING="0005ccccaaaa : NFSAQCO VDNH1FU YUHLODI F1GSHFU WXJEZRX YAUEQEF ZUAQRWX" HOSTID=0005ccccaaaa ISSUER=LICENSEID=3679917 START=11-Jul-2014 SIGN="0037 C92D F4DE 7805 9AE2 A1BF C7AA 7704 F720 EE90 7B01 2305 0E56 668F A750 411E A2BD 701A 2F1F 9452 9BAA"
+#
+#=========================LICENSE END===================================

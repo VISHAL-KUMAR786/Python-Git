@@ -1,0 +1,17 @@
+pip install pyinstaller
+
+open file as in dir 
+	\dist\main
+
+pyinstaller --onefile file.py
+
+
+pyinstaller main.py
+
+pyintsaller : The term 'pyintsaller' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ pyintsaller main.py
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (pyintsaller:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException

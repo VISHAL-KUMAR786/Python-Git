@@ -1,0 +1,7 @@
+License
+setup.py
+this.egg-info/PKG-INFO
+this.egg-info/SOURCES.txt
+this.egg-info/dependency_links.txt
+this.egg-info/top_level.txt
+vishalApp/__init__.py

@@ -1,0 +1,4 @@
+This is the secound file which 
+will be open in r+
+Adding new content
+Adding new content

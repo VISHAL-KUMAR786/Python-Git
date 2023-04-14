@@ -1,0 +1,75 @@
+We can also install different packages and “dataframes” in our virtual environment.
+
+pip install virtualenv
+python -m virtualenv folder_name
+\vishal\Scripts> .\activate
+deactivate
+pip3 freeze > requirements.txt
+option del vishal
+optional if we want all the package of main computer 
+	python -m virtualenv --system-site-packages folder_name
+download a particular version 
+	pip install package_name == version
+But in case we have a large number of libraries installed, this will take a massive amount of time as we have to install each one by one so we have another method by which we can install all the packages at once by using the requirement.txt file. The syntax would be:
+	pip install -r .\requirements.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+on creating virtualEnv there was error 
+	virtualenv : The term 'virtualenv' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if 	a path was included, verify
+	that the path is correct and try again.
+	At line:1 char:1
+	+ virtualenv vishal
+	+ ~~~~~~~~~~
+	    + CategoryInfo          : ObjectNotFound: (virtualenv:String) [], CommandNotFoundException
+	    + FullyQualifiedErrorId : CommandNotFoundException
+solution on stackoverflow
+	To install :
+		pip install --user virtualenv
+	To create a virtual environment (venv):
+		python -m virtualenv venv
+	To activate:
+		-cd venv
+		-cd Scripts
+		-activate.bat
+	To deactivate:
+		-deactivate.bat
+
+error in executing script/activate
+	activate : The term 'activate' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a 	path was included, verify that
+	the path is correct and try again.
+	At line:1 char:1
+	+ activate
+	+ ~~~~~~~~
+	    + CategoryInfo          : ObjectNotFound: (activate:String) [], CommandNotFoundException
+	    + FullyQualifiedErrorId : CommandNotFoundException
+run again the terminal
+	\vishal\Scripts> .\activate
+
+set-executionpolicy remotesigned => if there is any error in access or running the env
