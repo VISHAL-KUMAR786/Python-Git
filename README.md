@@ -1,2 +1,2 @@
 # Python
-Cover playlist of codewithharry
+Cover playlist of python & git from codewithharry
